@@ -2,10 +2,57 @@ body {
     padding: 0;
     margin: 0;
     padding-top: 100px;
-    width: 100vw;    
+    width: 100vw;
+    background-color: var(--dark-blue);
+
 
 }
+
+:root {
+    --dark-blue: rgb(25, 33, 41);
+    --light-blue: rgb(67, 163, 230);
+    --text-color: rgb(255, 255, 255);
+  }
+
 
 #form-container {
     margin: auto;
+    width: 250px;
+    box-sizing: border-box; /* el tamaño del elemento (width y height) incluye el borde y el relleno */
+    
 }
+
+.form {
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.fieldset {
+    border: 2px solid var(--light-blue);
+    padding: 1.5em 1em 1em 1em;
+}
+
+.fieldset input {
+    border: 1px solid var(--light-blue);
+    margin: 0.4em 0;
+}
+
+.fieldset textarea {
+    border: 1px solid var(--light-blue);
+    margin: 0.4em 0 0;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.button {
+    border-radius: 10px;
+    margin-top: 0.2em;
+    padding: 0.5em;
+    color: var(--text-color);
+    background-color: var(--light-blue);
+    border: none;
+}
+
+
